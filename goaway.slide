@@ -1,13 +1,17 @@
-Think In Go
-06 Sep 2022
+Thinking In Go
+Sep 2022
 
-Thomas Shen
-thomas.shen@crypto.com
+Johnny Zhou
+johnny.zhou@crypto.com
 https://crypto.com/
-@ThomasShen10
 
 * Introduction
 
+There is two types of channel
+* unbuffered channel
+.image code/images/unbuffered-channel.png _ 600
+* buffered channel
+.image code/images/buffered-channel.png _ 600
 This slide deck introduces you to Go
 - 在Go语言中模拟面向对象的行为
 
