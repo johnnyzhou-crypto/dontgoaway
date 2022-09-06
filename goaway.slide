@@ -1,0 +1,141 @@
+Think In Go
+06 Sep 2022
+
+Thomas Shen
+thomas.shen@crypto.com
+https://crypto.com/
+@ThomasShen10
+
+* Introduction
+
+This slide deck introduces you to Go
+- 在Go语言中模拟面向对象的行为
+
+* Function & Receiver
+
+读取struct信息.
+
+.play -edit code/oop/Receiver1.go /START_OMIT/,/END_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* Function & Receiver
+
+修改struct信息
+
+.play -edit code/oop/Receiver2.go /START_OMIT/,/END_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* Function & Receiver
+
+没有空指针
+
+.play -edit code/oop/ReceiverNull.go /START_OMIT/,/END_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* Mistakes
+
+输出结果是什么？
+
+.play -edit code/mistakes/Mistake1.go /START_OMIT/,/END_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* 扩展现有类型
+
+给string加上其他方法.
+
+.play -edit code/oop/Name1.go /START_OMIT/,/END_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* 扩展现有类型
+
+扩展Slice，实现一个FIFO的队列
+
+.play -edit code/oop/Queue.go /START_OMIT/,/END_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* Embedder struts
+
+这是继承吗？
+
+.play -edit code/oop/Name2.go /START_OMIT/,/END_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* Embedder struts
+
+没有Super
+
+.play -edit code/oop/Name3.go /START_OMIT/,/END_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* Go: No Inheritance
+
+This slide deck introduces you to Go
+- No. Just No.
+- Embedder struts + Automatic Delegation
+https://go.dev/doc/faq#Is_Go_an_object-oriented_language
+
+.play -edit code/oop/NoBase.go /START_OMIT/,/END_OMIT/
+
+* Interface
+
+抽象接口，而不是实现接口
+
+.play -edit code/oop/Greeter.go /START_OMIT/,/END_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* Interface
+
+No "base" method
+
+.play -edit code/oop/Greeter2.go 
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* Interface
+
+Wrong way
+
+.image code/images/topdown.jpg _ 600
+
+* Interface
+
+The go way
+
+.image code/images/bottomup.jpg _ 600
+
+* 设计模式
+
+Strategy 
+
+.play -edit code/patterns/Strategy.go /START_DEF_OMIT/,/END_DEF_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* 设计模式
+
+Strategy 
+
+.play -edit code/patterns/Strategy.go /START_IMPL_OMIT/,/END_IMPL_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* 设计模式
+
+Strategy
+
+.play -edit code/patterns/Strategy.go /START_RUN_OMIT/,/END_RUN_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+
+
+
