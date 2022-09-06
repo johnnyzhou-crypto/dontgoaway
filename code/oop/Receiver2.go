@@ -20,7 +20,7 @@ func main() {
 	p := Person{"David", 30}
 	p.changeAge(33)
 	fmt.Println(p.Age)
-	changeAge(p, 33)
+	changeAge(p, 35)
 	fmt.Println(p.Age)
 }
 
