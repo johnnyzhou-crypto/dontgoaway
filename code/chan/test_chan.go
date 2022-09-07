@@ -6,6 +6,8 @@ import (
 	"time"
 )
 
+// START_OMIT
+
 var values = make(chan int)
 
 func send() {
@@ -27,3 +29,5 @@ func main() {
 	fmt.Printf("end\n")
 
 }
+
+// END_OMIT

@@ -1,0 +1,40 @@
+Thinking In Go
+Sep 2022
+
+Johnny Zhou
+johnny.zhou@crypto.com
+https://crypto.com/
+
+* Introduction
+Goroutine
+Channel
+Lock
+...
+
+
+
+
+There is two types of channel
+* unbuffered channel
+.image code/images/unbuffered-channel.png _ 600
+* buffered channel
+.image code/images/buffered-channel.png _ 600
+
+
+This slide deck introduces you to Go
+
+
+
+- 在Go语言中模拟面向对象的行为
+
+* Function & Receiver
+
+读取struct信息.
+
+.play -edit code/chan/test_chan.go /START_OMIT/,/END_OMIT/
+
+This is a runnable program, press the *run* button in the bottom corner.
+
+* Function & Receiver
+
+修改struct信息
