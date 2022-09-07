@@ -11,17 +11,15 @@ Channel
 Lock
 
 
-
-
-
-There is two types of channel
-* unbuffered channel
+* Channel
+There are two types of channel
+####buffered channel
 .image code/images/unbuffered-channel.png _ 600
-* buffered channel
+####unbuffered channel
 .image code/images/buffered-channel.png _ 600
 
 
-This slide deck introduces you to Go
+* This slide deck introduces you to Go
 
 
 
