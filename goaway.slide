@@ -5,49 +5,32 @@ Johnny Zhou
 johnny.zhou@crypto.com
 https://crypto.com/
 
-## Title of Slide or Section (must begin with ##)
-
-Some Text
-
-### Subsection {#anchor}
-
-- bullets
-- more bullets
-- a bullet continued
-  on the next line
-
-#### Sub-subsection
-
-Some More text
-
-	Preformatted text (code block)
-	is indented (by one tab, or four spaces)
-
-Further Text, including command invocations.
-
-## Section 2: Example formatting {#fmt}
-
-
-
-
-
 
 * Introduction
 Goroutine
 Channel
-Lock
+WaitGroup
+web
 
+* Goroutine
+what is goroutine
 
 * Channel
 There are two types of channel
-####buffered channel
+buffered channel
+unbuffered channel
+
+* buffered channel
 .image code/images/unbuffered-channel.png _ 600
-####unbuffered channel
+
+* unbuffered channel
 .image code/images/buffered-channel.png _ 600
 
 
 * This slide deck introduces you to Go
 
+* WaitGroup
+what is waitgroup
 
 
 - 在Go语言中模拟面向对象的行为
