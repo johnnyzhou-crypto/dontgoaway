@@ -6,6 +6,8 @@ import (
 	"time"
 )
 
+// START_OMIT
+
 var i int = 100
 
 var wt sync.WaitGroup
@@ -45,3 +47,5 @@ func main() {
 	//共享资源枷锁，枷锁，互斥锁mutex
 	fmt.Printf("i result %v\n", i)
 }
+
+// END_OMIT
