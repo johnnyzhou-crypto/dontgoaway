@@ -27,7 +27,16 @@ unbuffered channel
 .image code/images/buffered-channel.png _ 600
 
 
-* This slide deck introduces you to Go
+* How to define a channel
+c := make(chan int) // unbuffered
+c := make(chan int, 1024)
+for i:=range c {
+　　...
+}
+
+* How to define a channel
+data := <- a   // read data from channel a
+a <- data      // write data to channel a
 
 * WaitGroup
 what is waitgroup
