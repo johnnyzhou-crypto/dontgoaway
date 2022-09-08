@@ -38,8 +38,11 @@ for i:=range c {
 data := <- a   // read data from channel a
 a <- data      // write data to channel a
 
+* A simple channel demo
+.play -edit code/chan/simpleChannel2.go /START_OMIT/,/END_OMIT/
+
 * WaitGroup
-what is waitgroup
+what is WaitGroup
 
 
 - 在Go语言中模拟面向对象的行为
