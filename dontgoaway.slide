@@ -16,11 +16,14 @@ web
 .image code/images/singleProcess.png _ 600
 
 * What issues?
-##Single process
-###Time issues
+1. Single process
+2. Time issues
 
 * Can we using multiple processes?
 .image code/images/MultiProcess.png _ 600
+
+* There is another issue
+.image code/images/timecause.png _ 600
 
 * Goroutine
 what is goroutine
