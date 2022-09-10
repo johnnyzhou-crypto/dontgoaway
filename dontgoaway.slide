@@ -12,6 +12,16 @@ Channel
 WaitGroup
 web
 
+* Background
+.image code/images/singleProcess.png _ 600
+
+* What issues?
+##Single process
+###Time issues
+
+* Can we using multiple processes?
+.image code/images/MultiProcess.png _ 600
+
 * Goroutine
 what is goroutine
 
@@ -43,7 +53,7 @@ a <- data      // write data to channel a
 
 * WaitGroup
 what is WaitGroup
-
+Golang中sync包中的WaitGroup实现的功能与CountDownLatch类似，主线程需要等待其他协程处理完所有任务之后才能继续向下执行
 
 - 在Go语言中模拟面向对象的行为
 
