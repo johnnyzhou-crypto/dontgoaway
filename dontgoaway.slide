@@ -16,8 +16,8 @@ web
 .image code/images/singleProcess.png _ 600
 
 * What issues?
-1. Single process
-2. Time issues
+Single process
+Time issues
 
 * Can we using multiple processes?
 .image code/images/MultiProcess.png _ 600
