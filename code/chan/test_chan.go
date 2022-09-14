@@ -8,22 +8,31 @@ import (
 
 // START_OMIT
 
-var values = make(chan int)
+var demoChan = make(chan int)
 
 func send() {
 	rand.Seed(time.Now().UnixNano())
 	value := rand.Intn(10)
 	fmt.Printf("seed: %v\n", value)
-	values <- value
+	demoChan <- value
+
+}
+
+func send2(v chan int) {
+	rand.Seed(time.Now().UnixNano())
+	value := rand.Intn(10)
+	fmt.Printf("seed2: %v\n", value)
+	v <- value
 
 }
 
 func main() {
 
-	defer close(values)
+	defer close(demoChan)
 	go send()
+	go send2(demoChan)
 	fmt.Printf("wait\n")
-	value := <-values
+	value := <-demoChan
 	fmt.Printf("received: %v\n", value)
 
 	fmt.Printf("end\n")

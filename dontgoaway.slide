@@ -79,6 +79,7 @@ Co-routine to Goroutine
 * Channel
 buffered channel
 unbuffered channel
+.image code/images/channel.png _ 600
 
 * buffered channel
 .image code/images/unbuffered-channel.png _ 600

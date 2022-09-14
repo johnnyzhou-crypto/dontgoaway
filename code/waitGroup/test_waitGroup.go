@@ -29,8 +29,6 @@ func showMsg(i int) {
 	fmt.Printf("i: %v\n", i)
 }
 
-//reference
-//https://blog.csdn.net/weixin_45486746/article/details/122161953
 func main() {
 	for i := 0; i < 10; i++ {
 		go showMsg(i)
