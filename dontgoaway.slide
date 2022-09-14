@@ -26,11 +26,55 @@ Time issues
 
 
 * There is another issue
-.image code/images/timecause.png _ 600
+.image code/images/TimeCause.png _ 600
 
+* High memory cost
+.image code/images/highCost.png _ 600
 
 * Goroutine
-what is goroutine
+.image code/images/kernalUserSpace.png _ 600
+
+* Goroutine
+Co-routine upgrade to Golang Goroutine
+.image code/images/goroutine.png _ 600
+
+* Early Goroutine
+.image code/images/OldScheduler.png _ 600
+
+* Early Goroutine issues
+Lock competition
+Load cost when Goroutine change to Thread
+Frequent block and unblock when context change
+
+* GMP
+.image code/images/GMP.png _ 600
+
+* Processor Scheduler strategy
+Re-use thread
+Use parallel
+Preemptive strategy
+Global Goroutine queue
+
+* Re-use thread
+Working stealing
+hand off
+
+* Working stealing
+.image code/images/workingStealing.png _ 600
+
+* Hand off
+.image code/images/handoff.png _ 600
+
+* Use parallel
+GOMAXPROCS setting
+
+* Preemptive strategy
+Co-routine to Goroutine
+.image code/images/occupy.png _ 600
+
+* Global Queue
+.image code/images/GlobleQueue.png _ 600
+
 
 * Channel
 buffered channel
@@ -61,16 +105,7 @@ a <- data      // write data to channel a
 what is WaitGroup
 Golang中sync包中的WaitGroup实现的功能与CountDownLatch类似，主线程需要等待其他协程处理完所有任务之后才能继续向下执行
 
-- 在Go语言中模拟面向对象的行为
-
-* Function & Receiver
-
-读取struct信息.
-
+* Example
 .play -edit code/chan/test_chan.go /START_OMIT/,/END_OMIT/
 
-This is a runnable program, press the *run* button in the bottom corner.
 
-* Function & Receiver
-
-修改struct信息
